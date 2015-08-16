@@ -1,0 +1,12 @@
+<h1>Greeting</h1>
+<div ng-show="authenticated">
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+        </ui-gmap-marker>
+    </ui-gmap-google-map>
+    <p>The ID is {{coordinate.id}}</p>
+    <p>The content is {{coordinate.latitude}} {{coordinate.longitude}}</p>
+</div>
+<div  ng-show="!authenticated">
+    <p>Login to see your greeting</p>
+</div>

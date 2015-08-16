@@ -1,0 +1,6 @@
+<div ng-show="authenticated">
+    <ul class="list-group">
+        <li ng-repeat="tracker in settings.trackers" class="list-group-item"><span class="badge">{{tracker.id}} <a ng-click="delete(tracker.id)">X</a></span>{{tracker.name}}</li>
+    </ul>
+    <li><a href="#/settings/addtracker">add a tracker</a></li>
+</div>

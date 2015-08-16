@@ -1,0 +1,10 @@
+<div ng-show="authenticated">
+    <form role="form" ng-submit="add()">
+        <div class="form-group">
+            <label for="trackername">Tracker name:</label> <input type="text"
+                                                           class="form-control" id="trackername" name="trackername"
+                                                           ng-model="tracker.name"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
